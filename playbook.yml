@@ -1,5 +1,13 @@
 ---
 - hosts: localhost
   connection: local
-
+  become: yes
   tasks:
+    - name: Install nginx package
+      apt:
+        name: nginx
+        state: present
+    # - name: Install dnsmasq package
+    #   apt:
+    #     name: dnsmasq
+    #     state: present
