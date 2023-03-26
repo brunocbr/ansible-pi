@@ -1,4 +1,4 @@
-thanks to https://neoighodaro.com/posts/10-setting-up-raspberry-pi-to-work-with-your-ipad
+**thanks to https://neoighodaro.com/posts/10-setting-up-raspberry-pi-to-work-with-your-ipad**
 
 #### Develop and connect locally to your Raspberry Pi 4 from your iPad Pro M1+M2.
 
@@ -21,3 +21,11 @@ run the playbook
 ```
 ansible-playbook playbook.yml
 ```
+
+reboot your pi
+
+```
+sudo reboot
+```
+
+enjoy!
