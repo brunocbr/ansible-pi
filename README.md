@@ -1,13 +1,23 @@
-**thanks to https://neoighodaro.com/posts/10-setting-up-raspberry-pi-to-work-with-your-ipad**
+## setup
 
-#### Develop and connect locally to your Raspberry Pi 4 from your iPad Pro M1+M2.
+create ssh key on host pc
 
-on your raspberry pi run the following
+ssh to server
 
+add ssh.pub to authorized_keys
+
+reboot
+
+## install deps
+
+```bash
+ansible-galaxy collection install community.docker
+ansible-galaxy collection install community.general
+ansible-galaxy install -r requirements.yml
 ```
-git clone https://github.com/christian-fei/ipad-pi-usb-setup.git
-cd ipad-pi-usb-setup
-```
+
+
+---
 
 install ansible on your pi
 
@@ -29,3 +39,16 @@ sudo reboot
 ```
 
 enjoy!
+
+---
+
+**thanks to https://neoighodaro.com/posts/10-setting-up-raspberry-pi-to-work-with-your-ipad**
+
+#### Develop and connect locally to your Raspberry Pi 4 from your iPad Pro M1+M2.
+
+on your raspberry pi run the following
+
+```
+git clone https://github.com/christian-fei/ipad-pi-usb-setup.git
+cd ipad-pi-usb-setup
+```
