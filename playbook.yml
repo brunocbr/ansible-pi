@@ -5,3 +5,7 @@
   roles:
     - role: usb
       tags: usb
+    - role: geerlingguy.pip
+      tagds: pip
+    - role: geerlingguy.docker_arm
+      tags: docker
