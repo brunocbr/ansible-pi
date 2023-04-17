@@ -5,7 +5,11 @@
   roles:
     - role: usb
       tags: usb
+    - role: nginx
+      tags: nginx
     - role: geerlingguy.pip
       tagds: pip
     - role: geerlingguy.docker_arm
       tags: docker
+    # - role: app-serpbear
+    #   tags: app-serpbear
