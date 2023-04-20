@@ -11,5 +11,3 @@
       tagds: pip
     - role: geerlingguy.docker_arm
       tags: docker
-    # - role: app-serpbear
-    #   tags: app-serpbear

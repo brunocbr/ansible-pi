@@ -32,6 +32,7 @@
     path: /boot/cmdline.txt
     regexp: '(.*)$'
     replace: '\1 modules-load=dwc2'
+  when: "'modules-load=dwc2' not in lookup('file', '/boot/cmdline.txt')"
 - name: Add libcomposite to /etc/modules
   lineinfile:
     path: /etc/modules

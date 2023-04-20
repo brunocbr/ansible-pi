@@ -1,5 +1,4 @@
 - name: install nginx
-  become: true
   apt:
     name: nginx
     state: present
@@ -7,3 +6,7 @@
   file:
     path: /etc/nginx/sites-enabled/default
     state: absent
+- name: stop nginx
+  service:
+    name: nginx
+    state: stopped
