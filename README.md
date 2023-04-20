@@ -27,8 +27,8 @@ reboot
 on your raspberry pi run the following
 
 ```
-git clone https://github.com/christian-fei/ipad-pi-usb-setup.git
-cd ipad-pi-usb-setup
+git clone https://github.com/christian-fei/ansible-pi.git
+cd ansible-pi
 ```
 
 
