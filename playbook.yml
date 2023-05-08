@@ -3,6 +3,10 @@
   connection: local
   become: yes
   roles:
+    - role: system
+      tags: system
+    - role: firewall
+      tags: firewall
     - role: usb
       tags: usb
     - role: nginx
