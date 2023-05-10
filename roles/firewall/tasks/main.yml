@@ -36,12 +36,15 @@
     rule: allow
     port: '8384'
     proto: tcp
-- name: limit ssh
+- name: allow ssh
   become: true
   community.general.ufw:
-    rule: limit
+    rule: allow
     port: ssh
     proto: tcp
 - name: reload ufw
   community.general.ufw:
     state: reloaded
+- name: enable ufw
+  community.general.ufw:
+    state: disabled

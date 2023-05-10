@@ -8,20 +8,22 @@
     validate: 'sshd -T -f %s'
     mode: 0644
   with_items:
-    - regexp: "^PasswordAuthentication"
-      line: "PasswordAuthentication no"
-    - regexp: "^PermitRootLogin"
-      line: "PermitRootLogin no"
-    - regexp: "^UseDNS"
-      line: "UseDNS no"
-    - regexp: "^PermitEmptyPasswords"
-      line: "PermitEmptyPasswords no"
-    - regexp: "^ChallengeResponseAuthentication"
-      line: "ChallengeResponseAuthentication no"
-    - regexp: "^GSSAPIAuthentication"
-      line: "GSSAPIAuthentication no"
-    - regexp: "^X11Forwarding"
-      line: "X11Forwarding no"
+    #- regexp: "^PasswordAuthentication"
+    #  line: "PasswordAuthentication no"
+    - regexp: "^PubkeyAuthentication"
+      line: "PubkeyAuthentication yes"
+    #- regexp: "^PermitRootLogin"
+    #  line: "PermitRootLogin no"
+    #- regexp: "^UseDNS"
+    #  line: "UseDNS no"
+    #- regexp: "^PermitEmptyPasswords"
+    #  line: "PermitEmptyPasswords no"
+    #- regexp: "^ChallengeResponseAuthentication"
+    #  line: "ChallengeResponseAuthentication no"
+    #- regexp: "^GSSAPIAuthentication"
+    #  line: "GSSAPIAuthentication no"
+    #- regexp: "^X11Forwarding"
+    #  line: "X11Forwarding no"
   notify: Restart SSH daemon
 - name: Install mosh
   become: true
