@@ -11,6 +11,8 @@
       tags: usb
     - role: nginx
       tags: nginx
+    - role: syncthing
+      tags: syncthing
     - role: geerlingguy.pip
       tagds: pip
     - role: geerlingguy.docker_arm
